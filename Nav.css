@@ -1,10 +1,8 @@
-/* nav.css */
-
-/* Style for the main navigation container */
+/* Base styles for the main navigation container */
 nav {
-    background-color: #333; /* Background color for the navigation bar */
-    color: #fff; /* Text color for the navigation bar */
-    padding: 10px 0; /* Add padding to the top and bottom */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 /* Style for the main navigation ul (unordered list) */
@@ -12,27 +10,27 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Display navigation items horizontally */
-    justify-content: center; /* Align items to the center horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 /* Style for individual navigation list items */
 nav ul li {
-    margin-right: 20px; /* Add space between list items */
+    margin-right: 20px;
 }
 
 /* Style for navigation links (anchor tags) */
 nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Text color for links */
-    font-weight: bold; /* Make the text bold */
-    font-size: 16px; /* Adjust the font size as needed */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .cart-icon {
-    color: #333; /* Icon color */
-    font-size: 24px; /* Icon size */
-    margin-right: 10px; /* Adjust the spacing between the icon and the categories dropdown */
+    color: #333;
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 /* Style the categories dropdown as needed */
@@ -41,19 +39,45 @@ nav a {
 }
 
 .cart-link {
-    color: #fff; /* Text color for the cart link */
-    text-decoration: none; /* Remove underlines from the cart link */
-    position: relative; /* Set position to relative for positioning the cart count */
+    color: #fff;
+    text-decoration: none;
+    position: relative;
 }
 
 /* Style for the cart count within the cart link */
 #cart-count {
-    background-color: #ff0000; /* Background color for the cart count */
-    color: #fff; /* Text color for the cart count */
-    border-radius: 50%; /* Make it a circle */
-    padding: 4px 8px; /* Add padding to the cart count */
-    font-size: 12px; /* Adjust the font size as needed */
-    position: absolute; /* Position it absolute within the cart link */
-    top: -8px; /* Adjust the top position as needed */
-    right: -8px; /* Adjust the right position as needed */
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 767px) {
+    nav ul {
+        flex-direction: row; /* Display navigation items horizontally on small screens */
+        flex-wrap: wrap; /* Allow items to wrap onto a new line if necessary */
+        justify-content: space-around; /* Distribute space around navigation items */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between list items on small screens */
+        margin-bottom: 10px; /* Add space below each list item */
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav ul li {
+        font-size: 14px; /* Adjust font size for medium screens if needed */
+    }
+}
+
+/* Large screens (laptops/desktops) */
+@media only screen and (min-width: 1024px) {
+    /* Add any additional styles for large screens here */
 }
